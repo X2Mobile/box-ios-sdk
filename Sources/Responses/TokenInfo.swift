@@ -22,8 +22,8 @@ public class TokenInfo: Codable {
         case issuedTokenType
     }
 
-    var accessToken: String
-    var refreshToken: String?
+    public private(set) var accessToken: String
+    public private(set) var refreshToken: String?
     var expiresIn: TimeInterval
     var tokenType: String
     private var restrictedTo: [[String: AnyCodable]]?
