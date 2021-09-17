@@ -27,7 +27,7 @@ public class TokenInfo: Codable {
     var expiresIn: TimeInterval
     var tokenType: String
     private var restrictedTo: [[String: AnyCodable]]?
-    let expiresAt: Date
+    public let expiresAt: Date
     var issuedTokenType: String?
 
     var restrictedToObjects: [[String: Any]] {
